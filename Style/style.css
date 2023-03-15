@@ -48,7 +48,8 @@ body{
     width: 100%;
     height: 89.7vh;
     overflow: hidden;
-    position: relative;   
+    position: relative;
+    margin-bottom: 10px;  
 }
 .hero img{
     position: absolute;
@@ -93,4 +94,33 @@ body{
 .hero .hero-text button:hover{
     background-color: #ff0000;
     color: white;
+}
+
+.advert{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.advert .advert-left{
+    display: block;
+    width: 100%;
+}
+
+.advert .advert-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .advert .advert-left .info img{
+    transition: transform 0.5s;
+}
+
+.advert .advert-left .info img:hover{
+    transform: translateY(-10px);
 }
